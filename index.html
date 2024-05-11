@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - MercadoLivre Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whiteSmoke;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: dimGray;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: dimGray;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: dimGray;
+}
+
+.product p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.btn-whatsapp {
+    background-color: limeGreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-whatsapp:hover {
+    background-color: mediumSeaGreen;
+}
+
+     </style>
+
+<body>
+    <header>
+        <h1>Pimenta Da Boa🌶️</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="products.html">Produtos</a></li>
+              
+                <li><a href="https://wa.me/+55 (21) 99460-2324">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+       <section class="products">
+        <h2>Produtos Disponíveis</h2>
+        <div class="product">
+            <img src="molho.png" alt="Product 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do produto 1.</p>
+            <p>Preço: R$ 100,00</p>
+            <!-- Adicione o link do WhatsApp com os detalhes do produto e URL da imagem -->
+            <a href="https://wa.me/+55 (21) 99460-2324/?text=Olá,%20gostaria%20de%20adicionar%20o%20Produto%201%20ao%20carrinho%20(%R$100,00)%20-%20[molho.png]" class="btn-whatsapp">Adicionar ao Carrinho</a>
+        </div>
+        <div class="product">
+            <img src="pimenta.png" alt="Product 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto 2.</p>
+            <p>Preço: R$ 80,00</p>
+            <!-- Adicione o link do WhatsApp com os detalhes do produto e URL da imagem -->
+            <a href="https://wa.me/+55 (21) 99460-2324/?text=Olá,%20gostaria%20de%20adicionar%20o%20Produto%202%20ao%20carrinho%20(%R$80,00)%20-%20[pimenta.png]" class="btn-whatsapp">Adicionar ao Carrinho</a>
+        </div>
+       
+       <div class="product">
+            <img src="jabuticaba.png" alt="Product 3">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto 2.</p>
+            <p>Preço: R$ 80,00</p>
+            <!-- Adicione o link do WhatsApp com os detalhes do produto e URL da imagem -->
+            <a href="https://wa.me/+55 (21) 99460-2324/?text=Olá,%20gostaria%20de%20adicionar%20o%20Produto%202%20ao%20carrinho%20(%R$80,00)%20-%20[jabuticaba.png]" class="btn-whatsapp">Adicionar ao Carrinho</a>
+        </div>
+                      
+               <!-- Adicione mais produtos conforme necessário -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Pimenta Da Boa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
