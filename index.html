@@ -94,12 +94,23 @@ nav ul li a {
     background-color: mediumSeaGreen;
 }
 
+
+
+  .carousel {
+        width: 100%;
+    }
+    .slick-slide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    
      </style>
 
 <body>
     <header>
         <h1>Pimenta Da Boa🌶️</h1>
-        
+       
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -113,7 +124,20 @@ nav ul li a {
         <h2>Produtos Disponíveis</h2>
         <div class="product">
             <img src="molho.png" alt="Product 1">
-            <h3>Molho</h3>
+         
+             
+        <div class="carousel">
+    <div><img src="foto1.jpg" alt="Foto 1"></div>
+    <div><img src="foto2.jpg" alt="Foto 2"></div>
+    <div><img src="foto3.jpg" alt="Foto 3"></div>
+    <!-- Adicione quantas imagens desejar -->
+</div>
+
+               
+                  
+                     
+                        
+                              <h3>Molhos</h3>
             <p>Descrição do produto 1.</p>
             <p>Preço: R$ 100,00</p>
             <!-- Adicione o link do WhatsApp com os detalhes do produto e URL da imagem -->
@@ -121,7 +145,7 @@ nav ul li a {
         </div>
         <div class="product">
             <img src="pimentas.png" alt="Product 2">
-            <h3>Pimenta</h3>
+            <h3>Pimentas</h3>
             <p>Descrição do produto 2.</p>
             <p>Preço: R$ 80,00</p>
             <!-- Adicione o link do WhatsApp com os detalhes do produto e URL da imagem -->
@@ -153,5 +177,27 @@ nav ul li a {
     <footer>
         <p>&copy; 2024 Pimenta Da Boa. Todos os direitos reservados.</p>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000, // Altere conforme desejado
+            dots: true
+        });
+    });
+    
+    </script>
+
+
+
 </body>
 </html>
+
+
